@@ -29,7 +29,7 @@ To set up the environment and install the necessary dependencies, follow these s
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/tofusplat/model-ai-methods.git
+    git clone https://github.com/PaoloBova/model-ai-methods.git
     cd model-ai-methods
     ```
 
