@@ -42,6 +42,7 @@ dependencies = [
     "scikit-learn (>=1.6.1,<2.0.0)",
     "h5py (>=3.13.0,<4.0.0)",
     "joblib (>=1.5.1,<2.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
 ]
 
 [project.urls]
@@ -50,6 +51,7 @@ Documentation = "https://github.com/tofusplat/model-ai-methods#readme"
 IssueTracker = "https://github.com/tofusplat/model-ai-methods/issues"
 
 [tool.poetry]
+packages = [{include = "model_ai"}]
 
 [tool.poetry.group.dev]
 optional = true
