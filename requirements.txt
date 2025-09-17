@@ -1,0 +1,14 @@
+ipykernel
+jupyterlab
+matplotlib
+more-itertools
+networkx
+numpy
+pandas
+plotly
+pytest
+regex
+scipy
+tqdm
+h5py
+joblib
