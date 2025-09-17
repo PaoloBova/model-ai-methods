@@ -1,6 +1,5 @@
 import os
 from typing import Dict
-import autogen
 
 def generate_prompt_from_template_path(replacement_dict: dict,
                                        template_path: str) -> str:
