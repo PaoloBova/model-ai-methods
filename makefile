@@ -1,5 +1,5 @@
 # Define variables
-ENV_NAME = model-ai.prototype-phd
+ENV_NAME = model-ai-methods
 PYTHON_VERSION = 3.10
 REQUIREMENTS_FILE = requirements.txt
 

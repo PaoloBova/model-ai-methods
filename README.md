@@ -1,6 +1,6 @@
-# prototype-phd
+# model-ai-methods
 
-A library where I communicate the key tools and insights I develop during my PhD (with an emphasis on AI Governance).
+Methods package for AI governance research: evolutionary game theory, agent-based modeling, and network analysis tools.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -12,8 +12,16 @@ A library where I communicate the key tools and insights I develop during my PhD
 
 ## Introduction
 
-This repository contains the `prototype-phd` library, which includes various tools and models developed during my PhD research. The focus is on AI Governance, and this repository includes a notebook that analyzes the AI Trust model described in the
-following preprint: https://arxiv.org/abs/2403.09510.
+This repository contains the `model-ai-methods` package, a Python library providing research methods for AI governance analysis. The package includes:
+
+- **Evolutionary Game Theory**: Fixation rate calculations, transition matrices, and stationary distributions
+- **Agent-Based Modeling**: Multi-agent simulation framework for policy analysis
+- **Network Analysis**: Graph-based modeling utilities
+- **DSAIR Models**: Game-theoretic models for AI safety and regulation
+- **Statistical Tools**: Bootstrapping, regression analysis, and data processing utilities
+- **Visualization**: Plotting tools for research results
+
+Example notebooks demonstrate applications to AI governance research problems.
 
 ## Setup
 
@@ -21,40 +29,49 @@ To set up the environment and install the necessary dependencies, follow these s
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/prototype-phd.git
-    cd prototype-phd
+    git clone https://github.com/tofusplat/model-ai-methods.git
+    cd model-ai-methods
     ```
 
-2. **Create the environment**:
-    Use the provided Makefile to create a mamba environment with the specified Python version.
+2. **Install using Poetry** (recommended):
+    ```bash
+    poetry install
+    poetry shell
+    ```
+
+    Or **create environment manually**:
     ```bash
     make env
-    ```
-
-3. **Activate the environment**:
-    ```bash
-    mamba activate model-ai.phd_prototype
-    ```
-
-4. **Install dependencies**:
-    ```bash
+    mamba activate model-ai-methods
     make deps
     ```
 
-## Running the Notebook
+## Usage
 
-To run the Jupyter notebook and plot the results of the AI Trust model, follow these steps:
+### Python Package
+
+After installation, import the package in Python:
+
+```python
+from model_ai.methods import egt
+from model_ai.methods.models import payoffs
+from model_ai.methods.utils import plot_utils
+
+# Example: Create DSAIR model
+models = payoffs.build_DSAIR(s=[1.1, 1.5, 2.0], p=[0.1, 0.5, 0.9])
+```
+
+### Running Example Notebooks
 
 1. **Start Jupyter Lab**:
     ```bash
     make lab
     ```
 
-2. **Open the notebook**:
-    In Jupyter Lab, navigate to the `notebooks` directory and open a notebook.
-
-3. **Run the notebook**:
-    Execute the cells in the notebook to perform the analysis and plot the results.
+2. **Open example notebooks**:
+    Navigate to the `examples/` directory and open one of the analysis notebooks:
+    - `10_analysis_dsair.ipynb` - DSAIR model analysis
+    - `11_analysis_regulator_markets.ipynb` - Regulatory market analysis
 
 ## Makefile Targets
 
