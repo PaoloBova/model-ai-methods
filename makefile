@@ -1,6 +1,6 @@
 # Define variables
 ENV_NAME = model-ai-methods
-PYTHON_VERSION = 3.10
+PYTHON_VERSION = 3.13
 REQUIREMENTS_FILE = requirements.txt
 
 # Target to create mamba environment
