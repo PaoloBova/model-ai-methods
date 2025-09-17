@@ -46,9 +46,9 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/tofusplat/model-ai-methods"
-Documentation = "https://github.com/tofusplat/model-ai-methods#readme"
-IssueTracker = "https://github.com/tofusplat/model-ai-methods/issues"
+Repository = "https://github.com/PaoloBova/model-ai-methods"
+Documentation = "https://github.com/PaoloBova/model-ai-methods#readme"
+IssueTracker = "https://github.com/PaoloBova/model-ai-methods/issues"
 
 [tool.poetry]
 packages = [{include = "model_ai"}]
